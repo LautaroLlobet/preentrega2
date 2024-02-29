@@ -1,0 +1,441 @@
+@import url("https://use.typekit.net/bps6rzl.css");
+
+/* importo la fuente a utilizar*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* normalizo las paginas*/
+
+/* codeo el formato mobile first de todos los elementos en resolucion 320px */
+
+body{   
+    font-family: "ingra-condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: rgb(43, 42, 42);
+    color: antiquewhite;
+}
+
+/* llamo a la fuente para todo el documento y cambio el grosor y color de fondo y fuente*/
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+}
+
+/* especifico el grosor de fuente para los titulos*/
+
+header{
+    background-color: orange;
+    width:100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    border: black solid 2px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* personalizo el header y su orientacion y comportamiento de items*/
+
+h1{ 
+    width: 200px;
+    padding: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    border: rgb(255, 255, 255) 2px solid;
+    background-color:rgb(43, 42, 42);
+}
+
+/* personalizo el titulo 1 */
+
+h2{
+    padding-top: 20px;
+    font-size: 40px;
+    color: black;
+}
+
+/* personalizo el titulo 2 */
+
+nav{
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: orange;
+    border: black solid 2px;   
+}
+
+ul{
+    margin-top: 15px;
+    display: block;
+    padding-left: 0;
+}
+
+li{
+    border: 5px black solid;
+    list-style: none;
+    margin: auto;
+}
+
+a{
+    color: rgb(38, 39, 39);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
+/* personalizo el menu de navegacion en mobile first */
+
+.evento{
+    margin-top: 20px;
+    background-color: orange;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* personalizo el comportamiento del contenedor evento que tendra dentro un video*/
+
+.videoinsta{
+    display: flex;
+    justify-content: center;
+}
+
+/* trabajo el comportamiento de los videos insertados de insta */
+
+h3{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* trabajo los titulos 3*/
+
+.index-titulo{
+    display: inline-block;
+    width: 300px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+/* titulo individual de un span */
+
+h4{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* edito los titulos 4 */
+
+.info{
+    margin: auto;
+    width: auto;
+    height: auto;
+    border: orange solid 10px ;
+    display: block;
+}
+
+/*edito contenedores*/
+
+.imagen{
+    border: orange solid 2px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* personalizo imagenes*/
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+iframe{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+/* personalizo el video iframe de youtube para mobile*/
+
+.informacion{
+    overflow: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor{
+    display: block;
+}
+
+.colorperfil{
+    background-color: rgba(30, 112, 30, 0.5);
+}
+
+.colorcrossfit{
+    background-color: rgba(0, 153, 255, 0.671);
+}
+
+.colorpesas{
+    background-color: rgba(241, 166, 2, 0.774);
+}
+
+.colorfuerza{
+    background-color: rgba(179, 34, 34, 0.671);
+}
+
+/* cambio el color de los contenedores de informacion de cada pagina*/
+
+/* galeria de la pagina inicio hecha con grids*/
+
+.galeria{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1,80%);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+        "alan"
+        "mujer"
+        "alancito"
+        "lupe"
+        "hombre"
+        "jime"    
+    ;
+}
+
+.imagen1{
+    grid-area: alan;
+}
+
+.imagen2{
+    grid-area: mujer;
+}
+
+.imagen3{
+    grid-area: hombre;
+}
+
+.imagen4{
+    grid-area: lupe;
+}
+
+.imagen5{
+    grid-area: alancito;
+}
+
+.imagen6{
+    grid-area: jime;
+}
+
+/* edicion del footer*/
+
+footer{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    background-color: rgb(0, 0, 0);
+    border: 10px orange solid;
+    word-spacing: 40px;
+    text-align: center;
+}
+
+.redes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1f);
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.redes a{
+    width: 50px;
+}
+
+.fa-brands{
+font-size: 60px;
+color: orange;
+margin: 10px;
+}
+
+.fa-brands:hover{
+    color: aliceblue;
+}
+
+/* edicion de los iconos y enlaces del footer*/
+
+
+/* aplicacion de mediaqueries para cambiar el formato de elementos en una resolucion laptop de 1024px*/
+
+@media only screen and (min-width: 1024px) {
+    
+.galeria{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,40%);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+        "alan alan"
+        "alan alan"
+        "mujer alancito"
+        "lupe hombre"
+        "jime jime"
+        "jime jime"    
+    ;
+}
+.imagen1{
+    grid-area: alan;
+}
+
+.imagen2{
+    grid-area: mujer;
+}
+
+.imagen3{
+    grid-area: hombre;
+}
+
+.imagen4{
+    grid-area: lupe;
+}
+
+.imagen5{
+    grid-area: alancito;
+}
+
+.imagen6{
+    grid-area: jime;
+}
+
+/* modifico la galeria de la pagina inicio para que ocupe otro patron*/
+
+h1{ width: 600px;   
+    padding: auto;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 60px;
+    border: rgb(255, 255, 255) 2px solid;
+    background-color:rgb(43, 42, 42);
+}
+
+h2{
+    padding-top: 20px;
+    font-size: 50px;
+    color: black;
+}
+
+h3{
+    font-size: 40px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+/* cambio los titulos y sus tamaños*/
+
+.carrete{
+    width: 80%;
+    z-index: 0;
+    margin: auto;
+    margin-top: 20px;
+    border: white 10px solid;
+    border-radius: 8px;
+}
+
+/* cambio del formato de carrete de fotos para que ocupe menos espacio en la pagina*/
+
+.navegador{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* cambio el menu de navegacion para que sea sticky y este arriba de los demas elementos*/
+
+nav{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: orange;
+    border: black solid 2px;  
+}
+
+ul{
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+} 
+li{
+    border: 0cap;
+}
+
+/* cambio el video iframe de youtube para las dimensiones de pantalla 1024px*/
+
+iframe{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 640px;
+    height: 360px;
+}
+
+/* trabajo el contenedor con display flex para ajustar el orden de sus elementos internos*/
+
+.contenedor{
+    margin: auto;
+    border: white 8px solid;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+.info{
+    width: 60%;
+} 
+
+p{
+    font-size: 25px;
+}
+
+.videoinsta{
+    background-color: white;
+    background-size: cover;
+    width: 40%;
+}
+
+/* distribuyo el espacio del contenedor para los elementos con porcentajes*/
+
+.redes{
+    display: inline-block;
+}
+
+/* cambio los iconos para que en vez de verse en formato grids se vean uno al lado del otro*/
+
+}
